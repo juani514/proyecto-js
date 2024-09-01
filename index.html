@@ -13,9 +13,11 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
     <!--Meta description-->
-    <meta name="description" content="Compra videojuegos de PlayStation al mejor precio en nuestra tienda en línea. Ofrecemos una amplia selección de títulos, desde los más recientes lanzamientos hasta clásicos imprescindibles. ¡Encuentra y adquiere tus juegos favoritos hoy mismo!.">
+    <meta name="description"
+        content="Compra videojuegos de PlayStation al mejor precio en nuestra tienda en línea. Ofrecemos una amplia selección de títulos, desde los más recientes lanzamientos hasta clásicos imprescindibles. ¡Encuentra y adquiere tus juegos favoritos hoy mismo!.">
     <!--Meta keywords-->
-    <meta name="keywords" content="videojuegos PlayStation, compra juegos PlayStation, tienda juegos PS, juegos PS en venta, videojuegos PS baratos, ofertas juegos PlayStation, juegos PlayStation online, adquirir juegos PS, tienda de videojuegos PlayStation, videojuegos PlayStation nuevos">
+    <meta name="keywords"
+        content="videojuegos PlayStation, compra juegos PlayStation, tienda juegos PS, juegos PS en venta, videojuegos PS baratos, ofertas juegos PlayStation, juegos PlayStation online, adquirir juegos PS, tienda de videojuegos PlayStation, videojuegos PlayStation nuevos.">
     <!--Meta geo-->
     <meta name="geo.placename" content="Argentina, Buenos Aires">
     <!--Meta author-->
@@ -28,10 +30,82 @@
 <body>
 
 
+    <header>
+        <h1 class="playmania">PLAYMANIA</h1>
+        <nav>
+            <ul class="headercontainer">
 
+                <li class="palabras"><a class=" header" href="html/play5.html">Play Station 5</a></li>
+                <li class="palabras"><a class="header" href="html/play4.html">Play Station 4</a></li>
+                <!--<li class="palabras"><a class="header" href="html/ofertas.html">Ofertas</a></li>-->
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <div class="divindexconteiner">
+
+                <img class="imgportada" src="assets/portada.jpg" alt="logo-playstation">
+                <h2 class="titulo"> Bienvenidos a nuestra tienda digital</h2>
+                <p class="parrafotitulo"> Encontrarás una amplia selección de videojuegos para PS5 y PS4, desde los
+                    últimos lanzamientos hasta clásicos atemporales. Navega con facilidad por nuestro catálogo, disfruta
+                    de ofertas exclusivas y recibe tus juegos directamente en la comodidad de tu hogar.</p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="carrito">
+
+                <h3 class="titulo2">Carrito de Compras</h3>
+
+                <ul id="carrito-items" class="carrito-items">
+
+                    <!-- Los elementos del carrito se añadirán acá -->
+
+                </ul>
+
+                <div id="carrito-total">
+
+                    Total: $<span id="total">0.00</span>
+
+                </div>
+
+                <div id="carrito-formulario">
+
+                    <label for="nombre-apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre-apellido" name="nombre-apellido" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <button id="finalizar-compra">Finalizar Compra</button>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footercontainer">
+
+        <a href="../index.html" class="inicio">Inicio</a>
+
+    </footer>
 
     <!--Link de mi JS-->
     <script src="js/script.js"></script>
+
 </body>
 
 

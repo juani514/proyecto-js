@@ -1,56 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* ESTILO DEL HEADER */
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILO DEL HEADER */
 
 .playmania {
 
-    color: rgb(88, 104, 120);
-    font-family: fantasy;
-    text-align: center;
-    font-size: 40px;
-    padding-top: 10px;
+  color: rgb(88, 104, 120);
+  font-family: fantasy;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10px;
 
 }
 
 .headercontainer {
 
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
 }
 
 .palabras {
 
-    margin: 10px;
-    padding: 10px;
-    font-size: 15px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
 
 }
 
 .palabras:hover {
 
-        background-color: rgba(123, 123, 123, 0.217);
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 10px;
-        transition: 2s;
+  background-color: rgba(123, 123, 123, 0.217);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 2s;
 
 }
 
 .header {
 
-    text-decoration: none;
-    color: rgb(88, 104, 120);
+  text-decoration: none;
+  color: rgb(88, 104, 120);
 
 }
 
 /*ESTILO DEL FOOTER*/
 
-.footercontainer{
+.footercontainer {
 
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@
 
 }
 
-.inicio{
+.inicio {
 
   text-decoration: none;
   color: rgb(88, 104, 120);
@@ -79,9 +79,9 @@
 
 .divindexconteiner {
 
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -92,7 +92,7 @@ align-items: center;
 
 }
 
-.titulo{
+.titulo {
 
   padding-top: 15px;
   font-size: 20px;
@@ -103,16 +103,16 @@ align-items: center;
 
 .parrafotitulo {
 
-margin: 10px 20px;
-padding: 5px 25px;
-font-size: 0px 15px;
-color: rgb(88, 104, 120);
+  margin: 10px 20px;
+  padding: 5px 25px;
+  font-size: 0px 15px;
+  color: rgb(88, 104, 120);
 
 }
 
 /* ESTILO CATALOGO PLAY 5/4 OFERTA*/
 
-.containercatalogo{
+.containercatalogo {
 
   width: 80%;
   margin: auto;
@@ -120,7 +120,7 @@ color: rgb(88, 104, 120);
 
 }
 
-.titulo2{
+.titulo2 {
 
   display: flex;
   justify-content: center;
@@ -131,7 +131,7 @@ color: rgb(88, 104, 120);
 
 }
 
-.catalogo{
+.catalogo {
 
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ color: rgb(88, 104, 120);
 
 }
 
-.imgcatalogo{
+.imgcatalogo {
 
   width: 200px;
   height: auto;
@@ -157,7 +157,7 @@ color: rgb(88, 104, 120);
 
 }
 
-/* ESTILO de LOGICA DEL CARRITO y BOTON */
+/* ESTILO de LOGICA DEL CARRITO BOTON FORMULARIO */
 
 .item {
 
@@ -172,7 +172,8 @@ color: rgb(88, 104, 120);
   bottom: 5px;
   left: 65%;
   transform: translateX(-50%);
-  background-color: rgb(88, 104, 120);;
+  background-color: rgb(88, 104, 120);
+  ;
   color: #fff;
   border: none;
   padding: 8px;
@@ -197,90 +198,112 @@ color: rgb(88, 104, 120);
 }
 
 .carrito {
-
-  margin-top: 30px;
-  text-align: center;
-
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin: 20px auto;
 }
 
-.carrito-items {
-
-  list-style: none;
-  padding: 0px 5px;
-  color: rgb(88, 104, 120);
-
+#carrito-total-y-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.carrito li {
-
-  margin: 5px 0;
-  font-size: 15px;
-  color: rgb(88, 104, 120);
-
-}
-.carrito button {
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 0px 5px;
-}
-.carrito button:hover {
-  background-color: #c82333;
-}
-  
 #carrito-total {
-
-    margin-top: 10px;
-    font-size: 20px;
-    color: rgb(88, 104, 120);
-
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-/* ESTILO DEL FORMULARIO DE COMPRA */
+#formulario {
+  width: 100%;
+  max-width: 300px;
+}
 
-#carrito-formulario {
-
-  margin-top: 20px;
-  text-align: center;
-
+.error {
+  color: red;
+  font-size: 15px;
+  display: none;  
 }
 
 #carrito-formulario label {
-
   display: block;
-  margin: 10px 0 5px;
-  font-size: 16px;
-  color: rgb(88, 104, 120);
-
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #carrito-formulario input {
-
+  width: 100%;
   padding: 8px;
-  font-size: 16px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-
 }
 
 #finalizar-compra {
-
-  margin-top: 15px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 10px;
   background-color: rgb(88, 104, 120);
-  color: #fff;
+  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-
 }
-
 #finalizar-compra:hover {
-
   background-color: green;
   transition: 2s;
+}
 
+#finalizar-compra:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.carrito-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrito-items li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 5px 0px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrito-items button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.carrito-items button:hover {
+  background-color: #e60000;
+}
+
+#carrito-total {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(88, 104, 120);
+}
+
+#carrito-formulario {
+  margin-top: 20px;
+  text-align: center;
 }

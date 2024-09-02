@@ -114,40 +114,66 @@
                     </div>
 
                 </div>
+        </section>
 
-                <div class="carrito">
+        <section>
 
-                    <h3 class="titulo2">Carrito de Compras</h3>
+            <div class="carrito">
 
-                    <ul id="carrito-items" class="carrito-items">
+                <h3 class="titulo2">Carrito de Compras</h3>
 
-                        <!-- Los elementos del carrito se añadirán acá -->
+                <ul id="carrito-items" class="carrito-items">
 
-                    </ul>
+                    <!-- Los elementos del carrito se añadirán acá -->
 
-                    <div id="carrito-total">
+                </ul>
 
-                        Total: $<span id="total">0.00</span>
+                <div id="carrito-formulario">
 
-                    </div>
+                    <div id="carrito-total-y-formulario">
 
-                    <div id="carrito-formulario">
+                        <div id="carrito-total">
 
-                        <label for="nombre-apellido">Nombre y Apellido:</label>
-                        <input type="text" id="nombre-apellido" name="nombre-apellido" required>
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br>
-                        <button id="finalizar-compra">Finalizar Compra</button>
-                        
+                            Total: $<span id="total">0.00</span>
+
+                        </div>
+
+                        <div id="formulario">
+
+                            <label for="nombre-apellido">Nombre y Apellido:</label>
+
+                            <input type="text" id="nombre-apellido" name="nombre-apellido" required>
+
+                            <br>
+
+                            <span class="error" id="error-nombre">Dato obligatorio</span>
+
+                            <br>
+
+                            <label for="email">Email:</label>
+
+                            <input type="email" id="email" name="email" required>
+
+                            <br>
+
+                            <span class="error" id="error-email">Dato obligatorio</span>
+
+                            <span class="error" id="error-email-formato">Formato de email inválido</span>
+
+                            <br>
+
+                            <button id="finalizar-compra">Finalizar Compra</button>
+
+                        </div>
+
                     </div>
 
                 </div>
+
             </div>
 
         </section>
-        
+
     </main>
 
 

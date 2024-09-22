@@ -15,7 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
 
         if (validateForm()) {
-            alert('¡La compra fue exitosa! En la brevedad recibirás al mail los códigos de tus juegos digitales.');
+            
+            Swal.fire({
+                title: '¡La compra fue exitosa!',
+                text: 'A la brevedad recibirás al mail los códigos de tus juegos digitales.',
+                icon: 'success',
+                confirmButtonText: 'CERRAR'
+              })
             clearCarrito();
             clearForm();
         }
@@ -125,10 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para cargar el catálogo de PS5
     function cargarCatalogoPS5() {
-        fetch('../json/catalogo.json') // Ajusta la ruta aquí
+        fetch('../json/catalogo.json') 
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Error al cargar Catalogo de Play Station 5');
                 }
                 return response.json();
             })
@@ -144,20 +150,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     `).join('');
                     containerPS5.innerHTML = tarjetasHTMLps5;
-                    initializeButtons(); // Inicializa los botones
+                    initializeButtons();
                 }
             })
             .catch(error => {
-                console.error('Error fetching the catalog:', error);
+                console.error('Error al cargar Catalogo:', error);
             });
     }
 
     // Función para cargar el catálogo de PS4
     function cargarCatalogoPS4() {
-        fetch('../json/catalogo.json') // Ajusta la ruta aquí
+        fetch('../json/catalogo.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Error al cargar Catalogo de Play Station 4');
                 }
                 return response.json();
             })
@@ -173,15 +179,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     `).join('');
                     containerPS4.innerHTML = tarjetasHTMLps4;
-                    initializeButtons(); // Inicializa los botones
+                    initializeButtons();
                 }
             })
             .catch(error => {
-                console.error('Error fetching the catalog:', error);
+                console.error('Error al cargar Catalogo: ', error);
             });
     }
 
-    // Función para inicializar los botones
+
     function initializeButtons() {
         const buttons = document.querySelectorAll('.item button');
         buttons.forEach(button => {
@@ -193,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Llamar a las funciones para cargar los catálogos
+
     cargarCatalogoPS5();
     cargarCatalogoPS4();
 });

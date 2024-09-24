@@ -1,3 +1,3 @@
-# Este es mi primer proyecto en Java Script.
+# Este es mi primer proyecto final en Java Script.
 
-Mi proyecto va a tratar sobre un E-Commerce de venta de videojuegos de Play Station, aplicando de a poco todo lo que me vaya aprendiendo en el curso y consignas de cada entrega.
+El mismo consiste en un e-commerce de venta de videojuegos digitales para Play Station 5 y 4. Cuenta con 3 archivos html, el primero corresponde a la pagina principal y en los dos restantes, es donde se encuentran las secciones de Play 5 y 4. Un unico archivo CSS, el cual fui diseñando a medida que iba desarrollando la idea del proyecto. Respecto a los archivos JS, estos estan divididos en el carrito de compra que cuenta con la funcionalidad del local storage, carga y validacion del formulario, sumado al mensaje de compra exitosa hecho con sweet alert 2. El otro archivo es donde esta la funcion del catalogo, generando un codigo html dinamico. Este ultimo, a traves de un fetch, obtiene de lo que antes había programado como un array de objetos en el mismo js, los datos utilizados en el archivo json para la creacion del catalogo.
